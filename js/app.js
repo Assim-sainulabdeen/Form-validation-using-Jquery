@@ -107,7 +107,7 @@ function validateGender(){
 
 function validateEmail(){
 
-    if (email.val().trim()===""){
+    if (email.val().trim() === ""){
         return (error(email, "*Email field cannot be empty"));
     }else if (!email.val().trim().match(emailRegexp)){
         (error(email, "Enter a valid Email"));
@@ -118,7 +118,7 @@ function validateEmail(){
 
 function validateMobileNumber(){
 
-    if(mobile.val().trim()===""){
+    if(mobile.val().trim() === ""){
         return (error(mobile, "Please fill the empty field"));
     }else if(mobile.val().trim().length != 10){
         return (error(mobile, "Please complete the phone number"));
